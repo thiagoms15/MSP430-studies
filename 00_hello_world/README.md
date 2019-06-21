@@ -34,7 +34,7 @@ ___
 
 This project uses a Makefile to build the _elf file_ .
 ```
-make
+$ make
 ```
 ___
 
@@ -56,13 +56,14 @@ ___
 In the first terminal start the *GDB-server*.
 
 ```
-mspdebug rf2500 gdb
+$ mspdebug rf2500 gdb
 ```
 
 In the second terminal connect to the server at the port opened.
 
 ```
 $ /opt/ti/msp430-gcc/bin/msp430-elf-gdb msp430g2553.out
+
 (gdb) target remote localhost:2000
 ```
 ___
